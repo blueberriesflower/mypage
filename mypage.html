@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: cursive;
+      margin: 120px;
+      background: rgb(24,235,237);
+      background: linear-gradient(0deg, rgba(24,235,237,1) 15%, rgba(41,102,95,1) 85%);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50px;
+    }
+
+    .skill-name {
+      margin-bottom: 15px;
+    }
+
+    .progress {
+      width: 200%;
+      height: 10px;
+      background-color: #8a8a8a;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #1091db;
+      width: 60%; 
+      transition: width 0.5s ease;
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    w {
+      color: #1ea4a8;
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Резюме</h1>
+    <img src="1.jpg">
+    <div class="info">
+      <p>Я - Юля, студентка ДВФУ.</p>
+      <p>Занимаюсь коллекционированием, увлекаюсь получением <w> дешевого дофамина. </w></p> 
+      <p>Люблю маму и папу.</p>
+      <p>Мои навыки:</p>
+    </div>
+
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 90%;"></div> </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;"></div> </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%;"></div> </div>
+      </div>
+    </div>
+    <div class="info"></div>
+      <h1>Связаться</h1>
+      <a href="mailto:erovikova.ya@dvfu.ru" target="_blank" title="да да я">Написать мне на почту</a>
+      <a href="tel:+79014324855" target="_blank" >Позвонить мне</a>
+      <a href="https://t.me/v0mitvasya" target="_blank" >telegram</a>
+      <a href="index.html" target="_blank" >подробнее</a>
+    </div>
+  </div>
+  <script src="script.js"></script> 
+</body>
+</html>
